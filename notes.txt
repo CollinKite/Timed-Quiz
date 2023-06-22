@@ -1,0 +1,10 @@
+Program will read in quiz provided via a CSV file in same directory. (Should default to "problems.csv" but user should be able to choose filename via a flag.
+
+CSV:
+question,answer
+
+At the end of the quiz the program should output the total number of questions correct and how many questions there were in total. Questions given invalid answers are considered incorrect.
+
+CSV files may have questions with commas in them. Eg: "what 2+2, sir?",4 is a valid row in a CSV. I suggest you look into the CSV package in Go and don't try to write your own CSV parser.
+
+After above is created add a quiz timer with a set time that can be updated via a flag. Timer should end quiz immediatly not after user finishes question.
